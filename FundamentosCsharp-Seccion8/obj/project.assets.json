@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/viviana-harrizon/projects-c/FundamentosCsharp-Seccion8/FundamentosCsharp-Seccion8.csproj",
+      "projectUniqueName": "/home/viviana-harrizon/Documentos/projects-c/FundamentosCsharp-Seccion8/FundamentosCsharp-Seccion8.csproj",
       "projectName": "FundamentosCsharp-Seccion8",
-      "projectPath": "/home/viviana-harrizon/projects-c/FundamentosCsharp-Seccion8/FundamentosCsharp-Seccion8.csproj",
+      "projectPath": "/home/viviana-harrizon/Documentos/projects-c/FundamentosCsharp-Seccion8/FundamentosCsharp-Seccion8.csproj",
       "packagesPath": "/home/viviana-harrizon/.nuget/packages/",
-      "outputPath": "/home/viviana-harrizon/projects-c/FundamentosCsharp-Seccion8/obj/",
+      "outputPath": "/home/viviana-harrizon/Documentos/projects-c/FundamentosCsharp-Seccion8/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/viviana-harrizon/.nuget/NuGet/NuGet.Config"

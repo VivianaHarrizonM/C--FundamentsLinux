@@ -8,12 +8,13 @@ namespace FundamentosC_.seccion8
 {
     internal class Genericos
     {
+        /*
         static void Main(string[] args)
         {
             //Variables locales
             string valorElemento;
             /*Alumno valorElemento*/
-            ;
+        /*    ;
 
 
             //Instanciando la clase
@@ -84,7 +85,7 @@ namespace FundamentosC_.seccion8
         public double Calificación
         {
             get => calificacion;
-        }
+        }*/
     }
     
 }
