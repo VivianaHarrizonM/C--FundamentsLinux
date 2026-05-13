@@ -53,7 +53,7 @@ namespace Seccion9
                 numeros += i + ",";
             }
             Console.WriteLine(numeros);*/
-
+/*
             StringBuilder numeros = new StringBuilder();
             for (int i = 0; i < 100; i++)
             {
@@ -64,6 +64,25 @@ namespace Seccion9
 
             string cadenaNumeros = numeros.ToString();
             Console.WriteLine(cadenaNumeros);
+*/
+
+
+//EQUALS
+        Console.Write("Ingresa tu correo: ");
+        string correo = Console.ReadLine();
+
+        Console.Write("Ingresa tu correo nuevamente: ");
+        string correoConfirmar = Console.ReadLine();
+
+        bool coincideCorreo = Equals(correo, correoConfirmar);
+
+        if (coincideCorreo)
+        {
+            Console.WriteLine("Registrado con exito");
+        }else
+        {
+            Console.WriteLine("Error");
+        }
 
         }
     }

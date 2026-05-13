@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FundamentosCsharp-Seccion8")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25609af911f459197de5c288ec79da555ae77a11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0d186a11b49bcc332fd5d71452482d83ceb204e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FundamentosCsharp-Seccion8")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FundamentosCsharp-Seccion8")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
