@@ -2,10 +2,10 @@ using System.Text;
 
 namespace Seccion9
 {
-    class Concatenacion
+    internal class Concatenacion
     {
-        static void Main(string[] args)
-        {
+       // static void Main(string[] args)
+     //   {
            /*  //Concatenación
             String palabra1 = "Hola"; //Creamos un objeto y se lo asignamos a la referencia "palabra1";
             String palabra2 = palabra1; // Creamos otra referencia (palabra2) que contiene el objeto de arriba
@@ -67,7 +67,8 @@ namespace Seccion9
 */
 
 
-//EQUALS
+//EQUALS   
+/*
         Console.Write("Ingresa tu correo: ");
         string correo = Console.ReadLine();
 
@@ -84,6 +85,17 @@ namespace Seccion9
             Console.WriteLine("Error");
         }
 
+//_________---------------------------________//
+        if (correo == correoConfirmar)
+        {
+            Console.WriteLine("Registrado con exito");
+        }else
+        {
+            Console.WriteLine("Error");
         }
+*/
+            
+        
+     //   }
     }
 }
