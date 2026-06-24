@@ -109,7 +109,7 @@ namespace FundamentosC_.seccion8
     //    Console.ReadKey();
     //Secuencias de escape de carácteres
        // Console.WriteLine("Cuando \testás aprendiendo un lenguaje,\n conviene eliminar todo lo que no aporte d\0irectamente al tema que estudias.\n\nSi el curso es de fundamentos de C#, lo \nimport\bante es que \nentiend\ras");
-
+/*
 //Secuencia de escape "Comilla \" "
         Console.WriteLine("La segunda tiene más personalidad y hace que ambos roles tengan nombres equivalentes dentro de la plataforma:\n \"Contratante además encaja muy bien porque no todos los usuarios serán empresas; puede ser cualquier persona que necesite una chambita.\" ");
 
@@ -118,7 +118,16 @@ namespace FundamentosC_.seccion8
 
 //SEcuencia de escape "Barra diagonal inversa \\ "
         Console.WriteLine("encaja muy bien porque mantiene la identidad de la marca y se entiende \\inmediatamente\\.");
+*/
 
+    //CADENAS DE FORMATO
+    //Formato compuesto
+
+    int numero1 = 5, numero2 = 10;
+
+    Console.WriteLine("El primer valor es: {0}, y el segundo valor es: {1}", numero1, numero2);
+
+    
 
         }   
 
