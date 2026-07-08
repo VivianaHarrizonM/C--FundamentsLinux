@@ -10,7 +10,7 @@ namespace FundamentosC_.seccion8
 {
     internal class Cadena
     {
-        static void Main(string[] args)
+  /*      static void Main(string[] args)
         {
 /*            string numero = "976543";
 
@@ -122,14 +122,69 @@ namespace FundamentosC_.seccion8
 
     //CADENAS DE FORMATO
     //Formato compuesto
+    //!Caracter de cadena interpolada $
 
-    int numero1 = 5, numero2 = 10;
+    //int numero1 = 5, numero2 = 10;
 
+
+/*
     Console.WriteLine("El primer valor es: {0}, y el segundo valor es: {1}", numero1, numero2);
 
-    
+    string cadena1;
 
-        }   
+    cadena1 = String.Format("El valor es {0}", numero1);
+    Console.WriteLine(cadena1);
+    */
+
+    //* Una literal de cadena entre comillas"", es la típica cadena encerrasa entre comillas dobles.
+/*
+    Console.WriteLine($"El primer valor es: {numero1}, y el segundo valor es: {numero2}");*/
+
+    //? {expresionDeInterpolación, alineación: cadenaDeFormato}
+     /*
+        string nombre = "Viviana";
+        int edad = 31;
+        Console.WriteLine($"Hola, soy {nombre}  y tengo {edad, 1} años"); 
+
+
+        int sueldo = 3500;
+        double gastos = 215.9867;
+
+        //Numero n, moneda c, para redondear f(Mas la cantidad de decimales que quieras)
+        Console.WriteLine($"Mi sueldo es de {gastos:f1}");
+        
+        int numero = 15000;
+        int numero2 = 11223344;
+        Console.WriteLine($"El valor es: {numero:0,0}");
+        Console.WriteLine($"El valor es: {numero2: ##-##-##-##}");
+*/
+
+        //Literales de cadena entre comillas
+
+     /*   string cadena1 = "Hola mundo";
+
+        //Loterales de cadena textual
+        //Caracteres "Identificador textual" @
+
+        string rutaDirectorio = @"C:\Windows\Fonts";
+        string cadena2 = @"La aclamada serie ""Braking Bad"" ganó tres premios Emmy";
+
+        //Para escribir una cedana de varias líneas
+        string cadena3 = @"-¿Cuál era? -dijo el pintor, sin levantar los ojos del suelo.
+        -Lo sabes perfectamente.
+        -No lo sé, Harry";
+
+        Console.WriteLine(rutaDirectorio);
+        Console.WriteLine(cadena1);
+        Console.WriteLine(cadena2);
+        Console.WriteLine(cadena3);
+
+        //Keywords: int for, double, switch, etc..
+
+       
+
+
+        }   */
 
     }
 
