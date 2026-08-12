@@ -5,8 +5,8 @@ namespace Seccion9
 {
   internal class Ejercicio9
   {
-/*
-    static void Main(string[] args)
+
+   /* static void Main(string[] args)
     {
       string nombreUsuario, opcion, contraseña;
       (bool contraseñaValida, string mensajeError) verificarContraseña;
@@ -50,9 +50,9 @@ namespace Seccion9
           }
           break;
       }
-    }
+    }*/
   }
-*/
+
   //Se crea una clase específicamente para manejar los campos y métodos que van a generar la contraseña
   class Contraseña
   {
@@ -70,7 +70,9 @@ namespace Seccion9
     public string GenerarContraseña()
     {
       //Aquí generamos la contraseña
-      string contraseñaGenerada = "";
+      //string contraseñaGenerada = "";
+      StringBuilder contraseñaGeneradaSB = new StringBuilder();
+
 
       //Instanciamos a la clase Random para usarla más adelante
       Random random = new Random();
@@ -88,7 +90,7 @@ namespace Seccion9
       char caracterEscogido;
 
       //Usamos la iteración while para ir colocando un carácter (de los 4 del grupo) hasta que completemos la longitud que se estableció anteriormente
-      while (contraseñaGenerada.Length < longitudContraseña)
+      while (contraseñaGeneradaSB.Length < longitudContraseña)
       {
         //Volvemos a usar un número aleatorio, esta vez para seleccionar uno de los 4 grupos de string que tenemos.
         switch (random.Next(0, 4))
@@ -101,7 +103,7 @@ namespace Seccion9
               caracterEscogido = numeros[random.Next(10)]  //*porque son 10 elementos
               caracterEscogido = numeros[3]  //*Toma el cuarto carácter  */
               caracterEscogido = numeros[random.Next(numeros.Length)];
-              contraseñaGenerada += caracterEscogido;
+              contraseñaGeneradaSB.Append(caracterEscogido);
               numContiene++;
             }
             break;
@@ -109,7 +111,7 @@ namespace Seccion9
             if (minContiene < minTener)
             {
               caracterEscogido = letrasMin[random.Next(letrasMin.Length)];
-              contraseñaGenerada += caracterEscogido;
+              contraseñaGeneradaSB.Append(caracterEscogido);
               minContiene++;
             }
             break;
@@ -117,7 +119,7 @@ namespace Seccion9
             if (mayContiene < mayTener)
             {
               caracterEscogido = letrasMay[random.Next(letrasMay.Length)];
-              contraseñaGenerada += caracterEscogido;
+              contraseñaGeneradaSB.Append(caracterEscogido);
               mayContiene++;
             }
             break;
@@ -125,13 +127,13 @@ namespace Seccion9
             if (espContiene < espTener)
             {
               caracterEscogido = caracterEspecial[random.Next(caracterEspecial.Length)];
-              contraseñaGenerada += caracterEscogido;
+              contraseñaGeneradaSB.Append(caracterEscogido);
               espContiene++;
             }
             break;
         }
       }
-      return contraseñaGenerada;
+      return contraseñaGeneradaSB.ToString();
     }
 
     //Método para comprobar la contraseña
@@ -237,5 +239,4 @@ namespace Seccion9
       return (contraseñaValida, mensajeError);
     }
   }
-}
 }

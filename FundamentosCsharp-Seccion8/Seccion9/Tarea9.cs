@@ -4,7 +4,7 @@ namespace Seccion9
 {
   internal class Tarea9
   {
-    static void Main(string[] args)
+  /*  static void Main(string[] args)
     {
       //Introducir una cadena de caracteres e indicar si es un polindromo. (una palabra polindroma es aquella que se lee igual adelante que atrás) por ejemplo Ana,ojo, rayar, solos, rapar, oso, rotomotor, sedes.
 
@@ -27,7 +27,7 @@ namespace Seccion9
       {
         Console.WriteLine($"\"{palabraUsuario}\"No es una palabrapalindroma");
       }
-    }
+    }*/
     
   }
 } 
