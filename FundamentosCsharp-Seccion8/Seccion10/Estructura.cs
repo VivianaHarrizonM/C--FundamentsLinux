@@ -4,6 +4,7 @@ namespace Seccion10
 {
   internal class Estructura
   {
+    /*
     static void Main(string[] args)
     {/*
       //!Tipos de referencia integrado
@@ -49,15 +50,33 @@ namespace Seccion10
   transferencia1.concepto = "Pago del préstamo";
 
   Console.WriteLine(transferencia1.ToString());
-*/
+
   //!CLASE DEBE llevar datos que formen parte de un onjeto aun más grande
 
-    Alumno alumno1 = new Alumno("Manuel", 23);
+   // Alumno alumno1 = new Alumno("Manuel", 23);
     //Pedido pedido1 = new Pedido();
 
 
-    } 
+      //!Crear instanvias de la estructura cliente
+      Cliente cliente1 = new Cliente();
+      cliente1.nombre = "Juan";
+      cliente1.edad = 30;
+      cliente1.direccion = "Calle Lirios 5";
 
+      Cliente cliente2 = new Cliente();
+      cliente2.nombre = "Mario";
+      cliente2.edad = 32;
+      cliente2.direccion = "Av. Reforma 234";
+
+
+      RegistroClientes registro1 = new RegistroClientes();
+      registro1.RegistrarCliente(cliente1);
+      registro1.RegistrarCliente(cliente2);
+
+      registro1.MostrarClientesRegistrados();
+
+    } 
+ */
 
  /* struct Alumno
   {
@@ -117,7 +136,7 @@ namespace Seccion10
     int vida;
 
   }*/
-
+/*
   struct Pedido
   {
     public string numeroPedido;
@@ -151,5 +170,36 @@ namespace Seccion10
     {
       
     }
+  }*/
+
+
+  struct Cliente
+  {
+    public string nombre, direccion;
+    public int edad;
+    
   }
+     class RegistroClientes
+    {
+      //Declaramos una lista generica para guardar a los clientes
+      List<Cliente> listaclientes =new List<Cliente>();
+
+      //Metodo para registrar clientes
+      public void RegistrarCliente(Cliente clientePa)
+      {
+        listaclientes.Add(clientePa);
+      }
+
+      public void MostrarClientesRegistrados()
+      {
+        Console.WriteLine("Lista de clientes registrados: \n");
+        foreach (var elemento in listaclientes)
+        {
+          Console.WriteLine($"Nombre: {elemento.nombre}");
+          Console.WriteLine($"Edad: {elemento.edad}");
+          Console.WriteLine($"Dirección: {elemento.direccion}");
+          Console.WriteLine("------------------------------");
+        }
+      }
+    }  
 }  
