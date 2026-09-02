@@ -2,6 +2,7 @@ namespace Seccion10
 {
   internal class EstructuraAnidada
   {
+    
     static void Main(string[] args)
     {
       /*
@@ -11,8 +12,17 @@ namespace Seccion10
       //*una estructura anidada separada === Dos estructuras declaradas de forma separada (Tomamos una de ellas y la instanciamos dentro de la otra).
       Empresa empresa1 = new Empresa();
       */
-      ListaReproduccion listaReproduccion = new ListaReproduccion();
+      
+      ListaReproduccion listaReproduccion = new ListaReproduccion
+      {
+        Nombre = "Clasicos",
+        cancion1 = { Titulo = "Bohemian Rhapsody", Artista = "Queen", Duracion = 355},
+        cancion2 ={ Titulo = "Viva las vegas", Artista = "Elvis Presley", Duracion = 141},
+      };
 
+      
+
+/*  
       listaReproduccion.Nombre = "clásicos";
 
       //Agregamos información  a las canciones contenidas en la lista de reproducción
@@ -22,12 +32,12 @@ namespace Seccion10
 
       listaReproduccion.cancion2.Titulo = "Viva las vegas";
       listaReproduccion.cancion2.Artista = "Elvis Presley";
-      listaReproduccion.cancion2.Duracion = 141;
+      listaReproduccion.cancion2.Duracion = 141;*/
 
       Console.WriteLine(listaReproduccion.ToString());
 
     }
-/*
+
     struct EstructuraPrincipal
     {
       struct EstructuraAnidada
@@ -44,9 +54,8 @@ namespace Seccion10
     struct Empresa
     {
       Empleado empleado1;
-    }*/
-
-    struct Cancion
+    }
+  struct Cancion
     {
       //Campos
       string titulo;
